@@ -23,5 +23,7 @@
             <img src='http://graphics8.nytimes.com/images/2015/10/08/us/07TRUMP/07TRUMP-thumbLarge.jpg'/>
         </Answer>
     </MultipleChoiceQuestion>
-    <End/>
+    <End>
+        You have answered <Value id="numberAnswered" /> questions and scored <Value id="score" /> points. 
+    </End>
 </Quiz>

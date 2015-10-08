@@ -4,14 +4,14 @@ import React from 'react'
 const Quiz = React.createClass({
 
     childContextTypes: {
-         quiz: React.PropTypes.any.isRequired,
+         answerQuestion: React.PropTypes.func.isRequired,
          numberAnswered: React.PropTypes.number.isRequired,
          score: React.PropTypes.number.isRequired
     },
 
     getChildContext() {
         return {
-            quiz: this,
+            answerQuestion: this.answerQuestion,
             numberAnswered: this.state.questionsAnswered,
             score: this.state.score
         }

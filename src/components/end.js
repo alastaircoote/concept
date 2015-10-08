@@ -8,11 +8,13 @@ const End = React.createClass({
         score: React.PropTypes.number.isRequired
     },
 
+    childContextTypes: {
+        numberAnswered: React.PropTypes.number.isRequired,
+        score: React.PropTypes.number.isRequired
+    },
+
     render() {
-        return <div>
-            <hr/>
-            You have answered {this.context.numberAnswered} questions and have {this.context.score} points.
-        </div>
+        return <span>{this.props.children}</span>
     }
 })
 

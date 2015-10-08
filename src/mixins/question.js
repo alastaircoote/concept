@@ -2,6 +2,9 @@ import React from 'react'
 
 export default {
     contextTypes: {
-        quiz: React.PropTypes.any.isRequired
-    }
+        answerQuestion: React.PropTypes.func.isRequired
+    },
+    childContextTypes: {
+         answerQuestion: React.PropTypes.func.isRequired
+    },
 }

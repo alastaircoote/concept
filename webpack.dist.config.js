@@ -3,7 +3,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 base.plugins.unshift(new ExtractTextPlugin("styles.css"))
 
-var cssLoaderIndexes = [1,2]
+var cssLoaderIndexes = [2,3]
 
 cssLoaderIndexes.forEach(function(index) {
     // hacky hacky
