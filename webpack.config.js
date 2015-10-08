@@ -11,6 +11,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+            { test: /\.jsx$/, loader: path.join(__dirname,'jsx-parse.js')},
             { test: /\.scss$/, loader: 'style!css!autoprefixer-loader!sass' },
             { test: /\.css$/, loader: 'style!css!autoprefixer-loader' },
             { test: /\.json$/, loader: 'json' },
@@ -22,6 +23,12 @@ module.exports = {
       modulesDirectories: [
               path.join(__dirname,'/node_modules')
           ]
+    },
+    wrap: {
+        jsx: {
+            before: "var React = require('react'); module.exports = function() {",
+            after: "}"
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({
