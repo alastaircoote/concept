@@ -5,9 +5,9 @@ We can use a combination of React, JSX templates and contexts to allow producers
 
 Areas of note
 ---
-- `quiz.jsx` - the file the producer would edit. Uses React components defined in...
+- `src/quiz.jsx` - the file the producer would edit. Uses React components defined in...
 
-- `components/` - some brief examples of question and answer components that could make up a quiz.
+- `src/components/` - some brief examples of question and answer components that could make up a quiz.
 
 Tasks
 --
